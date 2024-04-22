@@ -32,7 +32,7 @@ header{
 }
 
 h1{
-    padding: 1em;
+    padding: 0.7em 1em .7em 1em;
     font-size: 3.3em;
     /* text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.285); */
     text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.403),

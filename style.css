@@ -38,7 +38,7 @@ h1{
     text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.403),
                  10px 20px 5px rgba(0, 0, 0, 0.238),
                  -10px 20px 5px rgba(0, 0, 0, 0.099);
-    animation: appear 1s ease-out normal;
+    animation: appear .7s ease-out normal;
     
 }
 .cards {
@@ -93,7 +93,6 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     background-color: #E7DFD2;
     width: 100%;
     height: 100%;
@@ -106,7 +105,7 @@ h1{
     width: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    /* justify-content: center; */
 }
 .card-image {
     display: flex;
@@ -116,14 +115,19 @@ h1{
     height: 100%;
     img {
         width: 85%;
-        /* height: auto; */
         object-fit: cover;
         display: flex;
         align-items: flex-end;  
     }
 }
-.cards img{
-    visibility: hidden;
+
+.box3 img {
+    height: 10%;
+    display: none;
+}
+.box2 img {
+    height: 10%;
+    display: none;
 }
 .box1 img:first-child {
     width: 1%;
@@ -144,6 +148,7 @@ h1{
 }
 .text-box4 {
     justify-content: flex-start;
+
 }
 
 @keyframes slide {
@@ -155,8 +160,70 @@ h1{
     0% {
         visibility: hidden;
         color: #254955;
+        font-size: 2.7em;
     }
     100% {
         visibility: visible;
+    }
+}
+
+@media (min-width: 768px){
+    .box1, .box2, .box3, {
+        height: 15%;
+        font-size: 2em;
+    }
+    h1 {
+        font-size: 5em;
+    }
+    .box1 img {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px){
+    h1 {
+        font-size: 3em;
+    }
+    .cards {
+        padding: 0 10% 10% 10%;
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .box1, .box2, .box3, .box4 {
+        grid-column: span 2;
+        grid-row: span 2;
+        width: 100%;
+    }
+    .card-image {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 85%;
+            object-fit: cover;
+            display: flex;
+            align-items: flex-end;  
+        }
+    }
+    .box3 img {
+        height: 10%;
+        display: bl;
+    }
+    .box2 img {
+        height: 10%;
+        display: none;
+    }
+    .box1 img:first-child {
+        width: 1%;
+    }
+    .box4 img {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

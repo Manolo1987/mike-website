@@ -251,7 +251,7 @@ footer {
     margin-top: 10px;
     /* border: 1px solid lime; */
     /* height: 10vh; */
-    background-color: #1f3d47;
+    /* background-color: #1f3d47; */
     /* opacity: .75; */
     display: flex;
     justify-content: space-evenly;
@@ -259,11 +259,12 @@ footer {
     width: 100%;
     padding: 1em;
     text-align: center;
-    z-index: -2;
+    /* z-index: -2; */
 }
 footer a {
     color: #FAF9F6;
     padding: 1em;
+    z-index: 3 !important;
 }
 .kontakt {
     width: 100%;

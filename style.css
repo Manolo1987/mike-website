@@ -196,7 +196,7 @@ h1{
         padding: .3em 1em;
     }
     .cards {
-        padding: 1% 10% 9% 10%;
+        padding: 1% 10% 0 10%;
         display: grid;
         gap: 15px;
         grid-template-columns: repeat(4, 1fr);
@@ -245,6 +245,10 @@ h1{
         -10px 20px 5px rgba(0, 0, 0, 0.099);
         animation: slide .7s ease-out normal;
     }
+   
+    footer a {
+        font-size: 2em;
+    }
 }
 
 footer {
@@ -264,7 +268,7 @@ footer {
 footer a {
     color: #FAF9F6;
     padding: 1em;
-    z-index: 3 !important;
+    
 }
 .kontakt {
     width: 100%;

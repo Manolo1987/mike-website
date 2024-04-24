@@ -154,6 +154,9 @@ h1{
     justify-content: flex-start;
 
 }
+.kontakt h2 {
+    margin: 0;
+}
 
 @keyframes slide {
   0% {
@@ -197,6 +200,7 @@ h1{
     }
     .cards {
         padding: 1% 10% 0 10%;
+        /* margin: 1% 10% 0 10%; */
         display: grid;
         gap: 15px;
         grid-template-columns: repeat(4, 1fr);

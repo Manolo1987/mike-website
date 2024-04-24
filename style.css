@@ -10,6 +10,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -24,7 +25,7 @@ a:hover {
     color: #5abddd;
     cursor: pointer;
 }
-header{
+/* header{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -32,6 +33,43 @@ header{
     img {
         width: 8%;
     }   
+} */
+header {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #254955;
+    border-radius: 15px;
+    text-align: center;
+    margin: .6em;
+    padding: .2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #FAF9F6;
+}
+header h1 {
+    color: #FAF9F6;
+    padding: 0;
+    font-size: 2em;
+    text-shadow: 0px 7px 3px rgba(0, 0, 0, 0.403),
+                 5px 10px 2px rgba(0, 0, 0, 0.238),
+                 -5px 10px 3px rgba(0, 0, 0, 0.099);
+}
+header>div {
+    height: 100%;
+}
+header a {
+    color: #FAF9F6;
+    padding: 0;
+    text-shadow: 0px 7px 3px rgba(0, 0, 0, 0.403),
+                 5px 10px 2px rgba(0, 0, 0, 0.238),
+                 -5px 10px 3px rgba(0, 0, 0, 0.099);
+}
+.home {
+    padding: .5em .5em ;
+}
+.socials {
+    padding: .5em .5em ;
 }
 
 h1{
@@ -49,6 +87,7 @@ h1{
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 1.5em;
 }
 .cards p {
     color: #254955;

@@ -31,6 +31,9 @@ header a {
 .home {
     padding: .5em .5em ;
 }
+.socials {
+    padding: .5em .5em ;
+}
 h1 {
     margin: 0;
     font-size: 9vw;
@@ -81,6 +84,17 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     text-align: justify;
 } 
+.text h4 {
+    font-family: 'Bebas Neue', display;
+    text-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    background-color: #1a343d;
+    border-radius: 20px;
+    text-align: center;
+    padding: .3em 0;
+    margin: 1em;
+}
 
 p{
     padding: 1em;

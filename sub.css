@@ -137,6 +137,7 @@ cite {
 .back {
     text-align: center;
 }
+
 footer {
     margin-top: 10px;
     font-family: 'Bebas Neue', display;
@@ -179,11 +180,40 @@ footer p {
     display: block;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 h3 {
     font-size: 2em;
 }
 
+/* @media (max-width: 768px){
+    .video_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+} */
+
+.grid {
+    display: flex;
+    justify-content: center;
+}
+.video_grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(auto, 1fr) */
+    width: 70vw;
+    margin: 1em;
+    justify-content: center;
+    align-items: center;
+}
+.video_grid iframe {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    border: 7px solid #254955;
+    box-shadow: rgba(0, 0, 0, 0.629) 0px 3px 8px;
+}
 @media (min-width: 1000px){
     h1 {
         font-size: 2em;
@@ -204,15 +234,20 @@ h3 {
         font-size: larger;
     }
     .video_grid {
-        /* display: grid; */
-        /* gap: 15px; */
-        /* grid-template-columns: repeat(6, 1fr); */
-        /* grid-template-rows: repeat(4, 1fr); */
-        /* width: 95vw; */
-        /* margin: 1em; */
-        /* flex-direction: row; */
-        /* justify-content: center; */
-        /* align-items: center; */
+        width: 90%;
+    }
+    .video_grid iframe {
+        justify-self: center;
+        align-self: center;
+        height: 382px;
+        width: 100%;
+        aspect-ratio: 2/3;
+        flex-grow: 1;
+    
+    border-radius: 10px;
+    /* height: 150px; */
+    border: 7px solid #254955;
+    box-shadow: rgba(0, 0, 0, 0.629) 0px 3px 8px;
     }
     .socialgrid {
         width: 100%;
@@ -233,31 +268,4 @@ h3 {
         width: 100%;
         padding: 0;
     }
-}
-/* @media (max-width: 768px){
-    .video_grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-}
-    } */
-
-.grid {
-    display: flex;
-    justify-content: center;
-}
-.video_grid {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(2, 1fr);
-    width: 70vw;
-    margin: 1em;
-    justify-content: center;
-    align-items: center;
-}
-.video_grid iframe {
-    width: 150px;
-    border-radius: 50%;
-    height: 150px;
-    border: 7px solid #254955;
-    box-shadow: rgba(0, 0, 0, 0.629) 0px 3px 8px;
 }
